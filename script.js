@@ -3,6 +3,7 @@ const imageFile = document.getElementById("imageFile");
 const uploadMessage = document.getElementById("uploadMessage");
 const downloadBtn = document.getElementById("downloadBtn");
 
+
 uploadBtn.addEventListener("click", () => imageFile.click());
 
 
@@ -25,7 +26,7 @@ imageFile.addEventListener("change", () => {
                 setTimeout(()=> uploadMessage.style.display = "none", 500);
             }, 3000);
         } else {
-            alert("خطا ر آپلود فایل!");
+            alert("خطا در آپلود فایل!");
         }
         imageFile.value = "";
     })

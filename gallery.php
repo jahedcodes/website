@@ -1,6 +1,5 @@
-
 <?php
-$dir = __DIR__ . '/uploads/';
+$dir = __DIR__ . '/uploads/'; 
 $files = is_dir($dir) ? array_diff(scandir($dir), ['.', '..']) : [];
 ?>
 <!DOCTYPE html>
@@ -19,6 +18,7 @@ $files = is_dir($dir) ? array_diff(scandir($dir), ['.', '..']) : [];
             gap: 60px;
         }
 
+        
         .file-list {
             width: 40%;
             border-right: none; 
@@ -31,10 +31,10 @@ $files = is_dir($dir) ? array_diff(scandir($dir), ['.', '..']) : [];
         }
 
 
-        
+       
         .file-item {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-between; 
             align-items: center;
             padding: 6px 0;
         }
@@ -55,7 +55,7 @@ $files = is_dir($dir) ? array_diff(scandir($dir), ['.', '..']) : [];
             color: #666;
         }
 
-      
+       
         .preview {
             flex: 1;
             text-align: center;
@@ -85,21 +85,21 @@ $files = is_dir($dir) ? array_diff(scandir($dir), ['.', '..']) : [];
         }
 
         #downloadBtn {
-            display: none;
+            display: none; 
             margin: 20px auto 0 auto;
             padding: 15px 35px;
             font-size: 18px;
             font-weight: bold;
            
             color: black;
-            background-color: #f1ebbbff;
+            background-color: #f1ebbbff; 
             border-radius: 10px;
             text-decoration: none;
             cursor: pointer;
             box-shadow: 0 5px 10px rgba(227, 182, 182, 0.2);
             transition: all 0.3s ease;
-            display: block;
-            width: fit-content;
+            display: block; 
+            width: fit-content; 
         }
 
         #downloadBtn:hover {
@@ -114,7 +114,7 @@ $files = is_dir($dir) ? array_diff(scandir($dir), ['.', '..']) : [];
 </head>
 <body>
 
-
+  
     <div class="file-list">
         <h2>📁 فایل‌های آپلودشده</h2>
         <?php if (empty($files)): ?>

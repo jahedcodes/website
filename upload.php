@@ -23,7 +23,6 @@ while(file_exists($target)){
     $i++;
 }
 
-
 if(move_uploaded_file($file['tmp_name'], $target)){
     echo json_encode(["status" => "success", "file" => $realName]);
 } else {
