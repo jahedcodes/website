@@ -1,0 +1,158 @@
+@font-face {
+    font-family: "MyFont";
+    src: url("../fontstyle/This Night/This Night.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "TextFont";
+    src: url("../fontstyle/Monstserrat/Roboto_Condensed-Bold.woff2") format("woff2");
+}        
+
+
+
+
+body{
+        margin: 0;
+        padding: 0;
+        font-family: "TextFont";
+}
+
+.background{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('picture/complete_profile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.4);
+
+    
+}
+
+.content{
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.text-box{
+    display: inline-block;
+    background-color: white;
+    padding: 10px;
+    padding-left: 25px;
+    border-radius: 10px;
+    width: 350px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-left: 540px;
+
+}
+
+.logo{
+    width: 50px;
+    margin-left: 95px;
+    margin-top: 1px;
+}
+
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -20px;
+}
+
+label{
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 3%;
+    font-family: "TextFont";
+    margin-bottom: 2px
+    
+    ;
+} 
+
+input{
+    padding: 6px;
+    margin-left: 3%; 
+    width: 300px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 0.7px double rgba(186, 182, 182, 0.9) ;
+    border-bottom: 2px solid  rgba(19, 18, 18, 0.6) ;
+    text-align: center;
+    display: flex;
+    
+}
+
+input:focus{
+    outline: none; 
+    border-bottom: 2px solid rgba(6, 6, 6, 1);
+    
+    border-color: #0073e6; /* آبی آمازون */
+    box-shadow: 0 0 5px rgba(0, 115, 230, 0.4);
+
+}
+
+
+.btn{
+    all: unset;
+    cursor: pointer;
+    padding: 6px;
+    width: 301px;
+    height: 22px;
+    border-radius: 20px;
+    background-color: rgba(22, 138, 211, 0.61);
+    text-align: center;
+    margin-left: 10px;
+}
+
+.btn:hover{
+    transform: translateY(-2px);
+    background-color: rgba(34, 141, 218, 0.9);
+}
+
+
+
+#logo-name{
+    font-family: "MYFont";
+    color: rgba(39, 83, 119, 1);
+    font-size: 25px;
+    margin-left: 145px;
+    margin-top: -40px;
+}
+
+#first-text{
+    font-size: 25px;
+    margin-top: 0;
+    margin-left: 8px;
+    font-family: "TextFont";
+}
+
+#email-error{
+    font-size: 13px;
+    margin-left: 26px;
+    margin-top: 10px;
+    color: red;
+}
+
+#comfirm-error, #password-error, #name-error{
+    font-size: 13px;
+    margin-left: 10px;
+    margin-top: -35px;
+    color: rgba(244, 18, 18, 0.91);
+}
+
+
+
+
